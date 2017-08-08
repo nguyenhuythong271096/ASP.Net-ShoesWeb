@@ -1,0 +1,125 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Website Bán Giày</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+
+    </asp:ContentPlaceHolder>
+    <link href="StyleSheet/Weblayout.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet/MenuBar.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet/SubMenu.css" rel="stylesheet" type="text/css" />
+    <link href="StyleSheet/VerticalMenu.css" rel="stylesheet" type="text/css" />
+    <style>
+        .TTT
+        {
+        	 
+        
+            font-family: Cambria;
+            font-size: 14pt;
+            text-decoration: underline;
+            color: #FFFFFF;
+            font-style: Bold;
+        
+        }
+        .style1
+        {
+            line-height: 100%;
+            text-align: left;
+        }
+        .style2
+        {
+            line-height: 150%;
+        }
+        </style>
+</head>
+<body>
+    <form id="frmMaster" runat="server">
+    <div id="Main">
+        <div id="Head">
+            <asp:ImageMap ID="ImageMap1" runat="server" Height="250px" ImageUrl="~/Image/hinh.jpg" Width="960px">
+            </asp:ImageMap>
+        </div>
+        
+        <div id="Head-Link">
+            <div id="MenuStyle" style="font-size:20pt">
+                <ul>
+                    <li><a href="/WebsiteBanGiay/WebPage/TrangChu.aspx"> Trang chủ </a></li>
+                    <li><a href="#"> New Colletion </a></li>
+                    <li><a href="#"> Giày nam </a>
+                        <ul class="SubMenu">
+                                <li><a href="/WebsiteBanGiay/WebPage/HienthiGiaytay.aspx"> Giày tây </a></li>
+                                <li><a href="/WebsiteBanGiay/WebPage/Hienthigiaythethaonam.aspx"> Giày thể thao </a></li>
+                               
+                                <li><a href="/WebsiteBanGiay/WebPage/Hienthigiayxangdan.aspx"> Giày xăng đan </a></li>
+                        </ul> 
+                    </li>
+
+                    <li><a href="#"> Giày nữ </a>
+                         <ul class="SubMenu">
+                                <li><a href="/WebsiteBanGiay/WebPage/Hienthigiaycaogot.aspx"> Giày cao gót </a></li>
+                                <li><a href="/WebsiteBanGiay/WebPage/Hienthigiaythoitrang.aspx"> Giày thời trang </a></li>
+                                <li><a href="/WebsiteBanGiay/WebPage/Hienthigiaythethaonu.aspx"> Giày thể thao </a></li>
+                            
+                        </ul> 
+                    </li>
+                    <li><a href="#"> Đăng nhập </a>
+                    <ul class="SubMenu">
+                                <li><a href="#/WebsiteBanGiay/WebPage/Dangkythanhvien.aspx"> Đăng ký </a></li>
+                                </ul></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div id ="content-container"> 
+        <div id="Left">
+              <div id="VerticalMenu" style="font-size:20pt">
+                <ul>
+                    <li><a href="/WebsiteBanGiay/WebPage/Chuongtrinhkhuyenmai.aspx">Khuyến mãi</a></li>
+                    <li><a href="#">Ý kiến khách hàng</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                  
+                </ul>
+            </div>      
+        </div>
+        
+        <div id="Content">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="Right">
+            <asp:Image ID="Image1" runat="server" Height="250px" 
+                ImageUrl="~/Image/17671105_875225169283812_778565022_n.jpg" 
+                Width="210px" />
+        </div>
+
+        
+
+        <div id="Footer" style="font-weight:200; color:white; margin-top:auto">
+        Hộ kinh doanh Quốc Phúc Thư/ Địa chỉ: 7A/43 Thành Thái, P14, Q10, TP.HCM/ Email: nguyenthitamhanh97@gmail.com<br/>
+                                        Copyright © 2017 HanhCute. All Right Reserved.<br />
+                                         <ul>
+                                    
+                                   &nbsp;<asp:ImageMap ID="ImageMap3" runat="server" Height="21px" 
+                                        ImageUrl="~/Image/logo-facebook.png" Width="25px">
+                                    </asp:ImageMap>
+                                    <a href="https://www.facebook.com/VietnamPizzaHut" class="TTT">Facebook</a>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
+                                    <asp:ImageMap ID="ImageMap2" runat="server" Height="21px" 
+                                        ImageUrl="~/Image/youtube.png" Width="25px">
+                                    </asp:ImageMap>
+                                    <a href="https://www.youtube.com/channel/UCyqyAPpM7hbYhrRKi1kv0vg" class="TTT">Youtube</a>
+                                           
+                                    
+                                </ul>
+
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

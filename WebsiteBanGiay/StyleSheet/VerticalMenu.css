@@ -1,0 +1,31 @@
+﻿#VerticalMenu ul
+{
+	background: #0000FF;
+	width: 150px;
+	padding: 0;
+	list-style-type: none;
+	text-align: left;
+}
+#VerticalMenu li
+{
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+    border-bottom-color: #669999;
+    background-color: #000000;
+}
+#VerticalMenu li a
+{
+	text-decoration: none;
+	color: #f1f1f1;
+	font-weight: bold;
+	display: block;
+}
+#VerticalMenu li:hover
+{
+	background: #CCFFFF;
+}
+
+

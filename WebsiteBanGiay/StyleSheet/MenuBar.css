@@ -1,0 +1,40 @@
+﻿*
+{
+    padding: 0;
+    font-size: small;
+    color: #000000;
+    margin-left: 0px;
+    margin-right: 0;
+    margin-top: 0;
+}
+body
+{
+	font-family: Sans-Serif, Arial, Tahoma;
+	color: #333;
+}
+#MenuStyle ul
+{
+    background: #000000;
+    list-style-type: none;
+    text-align: center;
+}
+#MenuStyle li
+{
+	color: #000099;
+	display: inline-block;
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: -5px;
+}
+#MenuStyle a
+{
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+#MenuStyle a:hover
+{
+	background: #f1f1f1;
+	color: #333;
+}

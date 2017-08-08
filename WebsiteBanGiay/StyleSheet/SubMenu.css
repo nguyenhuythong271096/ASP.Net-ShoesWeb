@@ -1,0 +1,23 @@
+﻿.SubMenu li 
+{
+	display: none;
+}
+#MenuStyle li
+{
+    
+	position: relative;
+}
+.SubMenu
+{
+	display: none;
+	position: absolute;
+}
+#MenuStyle li:hover .SubMenu
+{
+	display: block;
+}
+.SubMenu li
+{
+   
+	margin-left: 0 !important;
+}
